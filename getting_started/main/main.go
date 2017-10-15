@@ -46,6 +46,8 @@ func main() {
 
 	fmt.Println("HTTP example")
 	http_example()
+
+	fmt.Println(1e+2)
 }
 
 func wrapper() func() int {
@@ -66,5 +68,5 @@ func http_example() {
 	res, _ := http.Get("http://www.google.com")
 	page, _ := ioutil.ReadAll(res.Body)
 	res.Body.Close()
-	fmt.Printf("%s", page)
+	fmt.Printf("%s\n\n", page)
 }
