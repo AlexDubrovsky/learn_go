@@ -21,7 +21,7 @@ type Shape interface {
 }
 
 func info(z Shape) {
-	fmt.Println(z)
+	// fmt.Println(z)
 	fmt.Println("Area ", z.area())
 }
 
